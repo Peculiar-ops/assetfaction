@@ -1,0 +1,33 @@
+{
+  "name": "assetfraction",
+  "version": "1.0.0",
+  "description": "AssetFraction - Blockchain-powered fractional ownership platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd frontend/assetfraction-frontend && npm run dev",
+    "build": "cd frontend/assetfraction-frontend && npm run build",
+    "start": "cd frontend/assetfraction-frontend && npm run start",
+    "lint": "cd frontend/assetfraction-frontend && npm run lint",
+    "install-frontend": "cd frontend/assetfraction-frontend && npm install",
+    "install-backend": "cd backend && pip install -r requirements.txt",
+    "install-contracts": "cd contracts && npm install"
+  },
+  "keywords": [
+    "blockchain",
+    "real-estate",
+    "fractional-ownership",
+    "hedera",
+    "nextjs",
+    "fastapi"
+  ],
+  "author": "AssetFraction Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Peculiar-ops/assetfaction.git"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

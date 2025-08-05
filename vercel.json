@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "name": "assetfraction",
+  "builds": [
+    {
+      "src": "frontend/assetfraction-frontend/package.json",
+      "use": "@vercel/next",
+      "config": {
+        "distDir": ".next"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "frontend/assetfraction-frontend/$1"
+    }
+  ],
+  "functions": {
+    "frontend/assetfraction-frontend/app/**": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "outputDirectory": "frontend/assetfraction-frontend/.next",
+  "framework": "nextjs",
+  "installCommand": "cd frontend/assetfraction-frontend && npm install",
+  "buildCommand": "cd frontend/assetfraction-frontend && npm run build",
+  "devCommand": "cd frontend/assetfraction-frontend && npm run dev"
+}
