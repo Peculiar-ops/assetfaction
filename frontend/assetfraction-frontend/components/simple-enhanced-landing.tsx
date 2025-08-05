@@ -1,9 +1,9 @@
 "use client"
 
 import React from 'react'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import { Button } from './ui/button'
+import { Card, CardContent, CardHeader, CardTitle } from './ui/card'
+import { Badge } from './ui/badge'
 import { 
   Sparkles, TrendingUp, Shield, Zap, Globe, Users, 
   ArrowRight, Play, Star, Building2, BarChart3,
